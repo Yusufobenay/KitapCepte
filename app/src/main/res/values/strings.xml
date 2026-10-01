@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Kitap Cepte</string>
+
+    <!-- Navigation -->
+    <string name="nav_home">Ana Sayfa</string>
+    <string name="nav_favorites">Favoriler</string>
+    <string name="nav_cart">Sepet</string>
+    <string name="nav_profile">Profil</string>
+
+    <!-- Content Descriptions -->
+    <string name="profile_icon_desc">Profil</string>
+    <string name="back_button_desc">Geri</string>
+    <string name="favorite_add_desc">Favorilere Ekle</string>
+    <string name="favorite_remove_desc">Favorilerden Çıkar</string>
+    <string name="cart_icon_desc">Sepet</string>
+    <string name="book_cover_desc">%1$s kapak görseli</string>
+
+    <!-- Common Buttons -->
+    <string name="btn_add_to_cart">Sepete Ekle</string>
+    <string name="btn_in_cart">Sepette</string>
+    <string name="btn_checkout">Ödemeye Geç</string>
+    <string name="btn_pay">Ödeme Yap</string>
+    <string name="btn_guest_continue">Misafir olarak devam et</string>
+    <string name="btn_email_login">E-posta ile giriş yap</string>
+    <string name="btn_register">Kayıt Ol</string>
+    <string name="btn_login">Giriş Yap</string>
+    <string name="btn_skip">Atla</string>
+    <string name="btn_next">İleri</string>
+    <string name="btn_get_started">Başla</string>
+    <string name="btn_delete">Sil</string>
+    <string name="btn_cancel">İptal</string>
+    <string name="btn_confirm">Onayla</string>
+    <string name="btn_retry">Tekrar Dene</string>
+
+    <!-- Order Summary -->
+    <string name="subtotal">Ara Toplam</string>
+    <string name="tax">Vergi (%10)</string>
+    <string name="shipping">Kargo Ücreti</string>
+    <string name="free_shipping">Ücretsiz</string>
+    <string name="total">Toplam</string>
+    <string name="currency_tl">₺</string>
+
+    <!-- Badges -->
+    <string name="badge_top_item">Top Item</string>
+
+    <!-- Member Required BottomSheet -->
+    <string name="member_required_title">Üye Olmanız Gerekiyor</string>
+    <string name="member_required_message">Bu özelliği kullanabilmek için lütfen giriş yapın veya kayıt olun.</string>
+    <string name="btn_login_or_register">Giriş Yap / Kayıt Ol</string>
+
+    <!-- States -->
+    <string name="loading">Yükleniyor...</string>
+    <string name="empty_books">Aradığınız kriterde kitap bulunamadı.</string>
+    <string name="empty_favorites">Henüz favori kitap eklemediniz.</string>
+    <string name="empty_cart">Sepetinizde henüz ürün bulunmuyor.</string>
+    <string name="error_generic">Bir sorun oluştu. Lütfen tekrar deneyin.</string>
+    <string name="network_error">İnternet bağlantınızı kontrol edin.</string>
+    <string name="book_added_to_cart">%1$s sepete eklendi.</string>
+    <string name="book_removed_from_cart">%1$s sepetten çıkarıldı.</string>
+    <string name="book_removed_from_favorites">%1$s favorilerden çıkarıldı.</string>
+    <string name="btn_remove_from_cart">Sepetten Çıkar</string>
+    <string name="detail_title">Kitap Detayı</string>
+    <string name="similar_books_title">Benzer Kitaplar</string>
+    <string name="book_description_title">Açıklama</string>
+
+    <!-- Auth Screen -->
+    <string name="auth_welcome_back">Tekrar hoş geldiniz</string>
+    <string name="auth_create_account">Yeni bir hesap oluşturun</string>
+    <string name="auth_tab_login">Giriş Yap</string>
+    <string name="auth_tab_register">Kayıt Ol</string>
+    <string name="auth_label_name">Ad Soyad</string>
+    <string name="auth_label_email">E-posta Adresi</string>
+    <string name="auth_label_password">Şifre</string>
+    <string name="auth_label_password_confirm">Şifre Tekrar</string>
+    <string name="auth_divider_or">veya</string>
+    <string name="auth_switch_to_register">Hesabınız yok mu? Kayıt Olun</string>
+    <string name="auth_switch_to_login">Zaten hesabınız var mı? Giriş Yapın</string>
+    <string name="auth_error_invalid_email">Lütfen geçerli bir e-posta adresi girin.</string>
+    <string name="auth_error_short_password">Şifre en az 6 karakter olmalıdır.</string>
+    <string name="auth_error_password_mismatch">Şifreler eşleşmiyor.</string>
+    <string name="auth_error_name_empty">Lütfen adınızı girin.</string>
+    <string name="auth_error_account_not_found">Hesabınız bulunamadı, lütfen kayıt olun.</string>
+    <string name="auth_error_generic_login">Giriş başarısız oldu.</string>
+    <string name="auth_error_generic_register">Kayıt başarısız oldu.</string>
+
+    <!-- Payment Screen -->
+    <string name="payment_title">Ödeme</string>
+    <string name="payment_card_holder_label">Kart Üzerindeki İsim</string>
+    <string name="payment_card_number_label">Kart Numarası</string>
+    <string name="payment_expiry_label">Son Kullanma (AA/YY)</string>
+    <string name="payment_cvv_label">CVV</string>
+    <string name="payment_save_card">Kartımı güvenle kaydet</string>
+    <string name="payment_error_card_holder">Lütfen kart üzerindeki ismi girin.</string>
+    <string name="payment_error_card_number">Geçerli bir 16 haneli kart numarası girin.</string>
+    <string name="payment_error_expiry">Geçerli bir son kullanma tarihi girin (AA/YY).</string>
+    <string name="payment_error_cvv">Geçerli bir 3 haneli CVV girin.</string>
+    <string name="payment_success_title">Siparişiniz Alındı!</string>
+    <string name="payment_success_message">Siparişiniz başarıyla oluşturuldu. Kitaplarınız en kısa sürede kargoya verilecektir.</string>
+    <string name="payment_order_number">Sipariş No: #KC%1$s</string>
+    <string name="btn_return_home">Ana Sayfaya Dön</string>
+    <string name="payment_total_amount">Ödenecek Tutar</string>
+
+    <!-- Profile Screen -->
+    <string name="profile_title">Profilim</string>
+    <string name="profile_section_user_info">Hesap Bilgileri</string>
+    <string name="profile_section_security">Güvenlik &amp; Şifre</string>
+    <string name="profile_section_saved_cards">Kayıtlı Kartlarım</string>
+    <string name="profile_section_actions">Hesap Eylemleri</string>
+    <string name="profile_label_email">E-posta</string>
+    <string name="profile_label_name">Ad Soyad</string>
+    <string name="profile_edit_name">Bilgileri Düzenle</string>
+    <string name="profile_save">Kaydet</string>
+    <string name="profile_cancel">Vazgeç</string>
+    <string name="profile_change_password">Şifre Güncelle</string>
+    <string name="profile_current_password">Mevcut Şifre</string>
+    <string name="profile_new_password">Yeni Şifre</string>
+    <string name="profile_confirm_password">Yeni Şifre (Tekrar)</string>
+    <string name="profile_update_password_btn">Şifremi Güncelle</string>
+    <string name="profile_password_updated">Şifreniz başarıyla güncellendi.</string>
+    <string name="profile_name_updated">Profil bilgileriniz güncellendi.</string>
+    <string name="profile_add_card">Yeni Kart Ekle</string>
+    <string name="profile_no_cards">Henüz kayıtlı bir kartınız bulunmuyor.</string>
+    <string name="profile_card_added">Kart başarıyla kaydedildi.</string>
+    <string name="profile_card_deleted">Kart başarıyla silindi.</string>
+    <string name="profile_delete_card_desc">Kartı Sil</string>
+    <string name="profile_logout">Çıkış Yap</string>
+    <string name="profile_switch_to_guest">Misafir Moduna Geç</string>
+    <string name="profile_logout_confirm_title">Çıkış Yapmak İstiyor musunuz?</string>
+    <string name="profile_logout_confirm_desc">Hesabınızdan çıkış yapmak üzeresiniz. İstediğiniz zaman tekrar giriş yapabilirsiniz.</string>
+    <string name="profile_guest_title">Misafir Kullanıcı</string>
+    <string name="profile_guest_desc">Şu anda misafir modundasınız. Sipariş vermek, kart kaydetmek ve favorilerinizi saklamak için giriş yapın.</string>
+    <string name="profile_error_current_password_empty">Lütfen mevcut şifrenizi girin.</string>
+    <string name="profile_error_new_password_short">Yeni şifre en az 6 karakter olmalıdır.</string>
+    <string name="profile_error_password_mismatch">Yeni şifreler birbiriyle uyuşmuyor.</string>
+    <string name="profile_error_same_password">Yeni şifre mevcut şifrenizle aynı olamaz.</string>
+    <string name="profile_error_invalid_card">Lütfen kart bilgilerini eksiksiz ve doğru girin.</string>
+    <string name="profile_error_name_empty">İsim alanı boş bırakılamaz.</string>
+    <string name="profile_role_member">Aktif Üye</string>
+    <string name="profile_role_guest">Misafir</string>
+    <string name="profile_card_holder_label">Kart Üzerindeki İsim</string>
+    <string name="profile_card_number_label">Kart Numarası (16 Hane)</string>
+    <string name="profile_card_expiry_label">Son Kullanma (AA/YY)</string>
+    <string name="profile_save_card_btn">Kartı Kaydet</string>
+    <string name="profile_delete_card_confirm">Bu kayıtlı kartı silmek istediğinize emin misiniz?</string>
+</resources>
