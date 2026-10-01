@@ -117,7 +117,9 @@ fun ProfileScreen(
                     GuestModeCard(
                         onLoginClick = { onEvent(ProfileUiEvent.LoginClicked) }
                     )
+                    GuestBenefitsCard() //
                 } else {
+                    ReadingGoalCard()
                     // 1. User Info Card
                     UserInfoCard(
                         user = state.user,
@@ -1099,5 +1101,114 @@ private fun ProfileScreenGuestPreview() {
             ),
             onEvent = {}
         )
+    }
+}
+
+@Composable
+fun ReadingGoalCard(
+    currentBooks: Int = 18,
+    targetBooks: Int = 25,
+    modifier: Modifier = Modifier
+) {
+    val progress = (currentBooks.toFloat() / targetBooks.toFloat()).coerceIn(0f, 1f)
+    val percentage = (progress * 100).toInt()
+
+    androidx.compose.material3.Card(
+        modifier = modifier
+            .fillMaxWidth()
+            .padding(horizontal = 16.dp, vertical = 8.dp),
+        colors = androidx.compose.material3.CardDefaults.cardColors(
+            containerColor = androidx.compose.material3.MaterialTheme.colorScheme.surfaceVariant.copy(alpha = 0.5f)
+        ),
+        shape = androidx.compose.foundation.shape.RoundedCornerShape(16.dp)
+    ) {
+        Column(
+            modifier = Modifier.padding(16.dp),
+            verticalArrangement = androidx.compose.foundation.layout.Arrangement.spacedBy(8.dp)
+        ) {
+            Row(
+                modifier = Modifier.fillMaxWidth(),
+                horizontalArrangement = androidx.compose.foundation.layout.Arrangement.SpaceBetween,
+                verticalAlignment = androidx.compose.ui.Alignment.CenterVertically
+            ) {
+                Text(
+                    text = "🎯 2026 Okuma Hedefi",
+                    style = androidx.compose.material3.MaterialTheme.typography.titleMedium,
+                    fontWeight = androidx.compose.ui.text.font.FontWeight.Bold
+                )
+                Text(
+                    text = "%$percentage",
+                    style = androidx.compose.material3.MaterialTheme.typography.labelLarge,
+                    color = androidx.compose.material3.MaterialTheme.colorScheme.primary,
+                    fontWeight = androidx.compose.ui.text.font.FontWeight.Bold
+                )
+            }
+
+            androidx.compose.material3.LinearProgressIndicator(
+                progress = { progress },
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .height(8.dp),
+                strokeCap = androidx.compose.ui.graphics.StrokeCap.Round
+            )
+
+            Text(
+                text = "$targetBooks kitaptan $currentBooks tanesi tamamlandı",
+                style = androidx.compose.material3.MaterialTheme.typography.bodySmall,
+                color = androidx.compose.material3.MaterialTheme.colorScheme.onSurfaceVariant
+            )
+        }
+    }
+}
+@Composable
+fun GuestBenefitsCard(
+    modifier: Modifier = Modifier
+) {
+    androidx.compose.material3.Card(
+        modifier = modifier
+            .fillMaxWidth()
+            .padding(horizontal = 16.dp, vertical = 8.dp),
+        colors = androidx.compose.material3.CardDefaults.cardColors(
+            containerColor = androidx.compose.material3.MaterialTheme.colorScheme.surfaceVariant.copy(alpha = 0.4f)
+        ),
+        shape = androidx.compose.foundation.shape.RoundedCornerShape(16.dp)
+    ) {
+        Column(
+            modifier = Modifier.padding(16.dp),
+            verticalArrangement = androidx.compose.foundation.layout.Arrangement.spacedBy(12.dp)
+        ) {
+            Text(
+                text = "✨ KitapCepte Ayrıcalıkları",
+                style = androidx.compose.material3.MaterialTheme.typography.titleMedium,
+                fontWeight = androidx.compose.ui.text.font.FontWeight.Bold
+            )
+
+            BenefitItem(emoji = "🔖", title = "Kişisel Kitaplığım", desc = "Okuduğun ve favorilediğin kitapları listele")
+            BenefitItem(emoji = "🎯", title = "Yıllık Okuma Hedefi", desc = "Hedefler koy ve ilerlemeni anlık takip et")
+            BenefitItem(emoji = "🔔", title = "İndirim Fırsatları", desc = "Takip ettiğin kitaplar indirime girdiğinde yakala")
+        }
+    }
+}
+
+@Composable
+private fun BenefitItem(emoji: String, title: String, desc: String) {
+    Row(
+        modifier = Modifier.fillMaxWidth(),
+        horizontalArrangement = androidx.compose.foundation.layout.Arrangement.spacedBy(12.dp),
+        verticalAlignment = androidx.compose.ui.Alignment.CenterVertically
+    ) {
+        Text(text = emoji, style = androidx.compose.material3.MaterialTheme.typography.titleLarge)
+        Column {
+            Text(
+                text = title,
+                style = androidx.compose.material3.MaterialTheme.typography.bodyMedium,
+                fontWeight = androidx.compose.ui.text.font.FontWeight.SemiBold
+            )
+            Text(
+                text = desc,
+                style = androidx.compose.material3.MaterialTheme.typography.bodySmall,
+                color = androidx.compose.material3.MaterialTheme.colorScheme.onSurfaceVariant
+            )
+        }
     }
 }
